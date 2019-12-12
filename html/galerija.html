@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+<head>
+  <title>Galerija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/css.css"></link>
+  <script type="text/javascript" src="../js/do_kraja_casa.js"></script>
+    
+  <script type="text/javascript" src="../js/galerija_povecaj_sliku.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+		<nav class="col-md-2">
+			<img src="../slike/logo_skole.jpg" alt="Logo" style="min-width:100%;max-width:100%">
+			<ul class="nav flex-column">
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block"
+				onclick="window.location.href='../index.html'">Pocetna <wbr>stranica</button>
+			  </li>
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block" 
+				onclick="window.location.href='o_skoli.html'">O <wbr>skoli</button>
+			  </li>
+			  
+			  <li class="nav-item">  
+				<button type="button" class="btn btn-outline-primary btn-block active"
+				onclick="window.location.href='galerija.html'">Galerija</button>
+			  </li>
+			  
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block" 
+				onclick="window.location.href='pogled.html'">Pogled</button>
+			  </li>
+			  
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block" 
+				onclick="window.location.href='novosti.html'">Novosti</button>
+			  </li>
+			  
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block" 
+				onclick="window.location.href='radnici.html'">Radnici</button>
+			  </li>
+			  
+			  <li class="nav-item">
+				<button type="button" class="btn btn-outline-primary btn-block" 
+				onclick="window.location.href='vanredni.html'">Vanredni</button>
+			  </li>
+			</ul>
+		</nav>
+	  
+		<main class="col-md-10">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12">
+					<h1>Galerija - Srednja skola Babusnica</h1>
+				  </div>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_1.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(1)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_2.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(2)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_3.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(3)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_4.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(4)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_5.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(5)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_6.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(6)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_7.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(7)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_8.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(8)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="../slike/slika_za_galeriju_9.jpg" alt="Slika">
+						<div class="card-body">
+							<h3 class="card-title">Ime slike</h3>
+							<p class="card-text">Opis slike</p>
+							<button class="btn btn-outline-primary" onclick="zoomImage(9)"
+							data-toggle="modal" data-target="#povecajSliku">
+							  Povecaj sliku
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="modal fade" id="povecajSliku">
+				<div class="modal-dialog">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+						<div class="modal-title">
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<img id="uvecanaSlika">
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</main>
+	</div>
+	
+	<footer class="row">
+	  <div class="col-md-2">
+		
+	  </div>
+	  <div class="col-md-10">
+		<p id="krajCasa"></p>
+	  </div>
+	</footer>
+  </div>
+</body>
+</html>
